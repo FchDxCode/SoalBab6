@@ -1,0 +1,181 @@
+1. Perhatikan Kode Berikut!
+<html>
+<head>
+    <script type="text/javascript">
+        function perkenalan() {
+            alert("Salam!")
+        }
+    </script>
+</head>
+<body>
+    <a href="JavaScript:perkenalan()">Klik Disini Untuk Salam</a>
+</body>
+</html>
+
+Apa Yang Akan Terjadi Bila Mengklik Link Tersebut Dan Dalam Bentuk Apakah Keluaran Nya?
+
+a. Akan Keluar Salam! Dalam Bentuk Document
+b. Akan Mengeluarkan perkenalan Dalam Bentuk prompt
+c. Tidak Akan Terjadi Apa-Apa
+d. Akan Keluar Salam! Dalam Bentuk Alert 
+e. Akan Mengeluarkan javascript                    
+
+2. Perhatikan kode di bawah berikut!
+
+<html>
+  <head>
+    <title>Level</title>
+      <script type="text/javascript">
+         function KananKiri(nomor){
+          document.write("<b><font size='+1'>x "
+            + nomor + "</b><br />");
+          if(nomor < 4){
+          KananKiri(nomor + 1); // Fungsi memanggil dirinya
+            document.write("<em>x "+ nomor + "<em><br />");
+          }
+        }
+      </script>
+  </head>
+  <body bgcolor="lightblue">
+    <h2>Level</h2>
+    <script type="text/javascript">
+      KananKiri(1);
+    </script>
+  </body>
+</html>
+
+Jika di Run apa yang akan muncul?
+
+A.Level 
+ x 1
+ x 2
+ x 3
+ x 4
+ x 5
+ x 6
+ x 7
+B.Level
+x 1
+x 2
+x 3
+x 4
+x 5
+x 3
+x 2
+C.Level
+x 1
+x 2
+x 3
+x 4
+x 3
+x 2
+x 1
+D.Level
+1x 
+2x
+3x 
+4x
+3x 
+2x 
+1x 
+E.Level
+1x 
+2x 
+3x 
+4x 
+5x 
+6x 
+7x 
+
+answer: C
+
+3. Perhatikan Kode Berikut
+<html>
+    <head>
+            <script class="text/javascript">
+                var selamat=function (peserta) {
+                    pesan="Selamat kepada anda, " + peserta + "! ";
+                    return pesan;
+                }
+            </script>
+    </head>
+    <body>
+        <big>
+            <script type="text/javascript">
+                var nama=selamat("Akbar");
+                document.write(nama + "<br />");
+                var penghargaan = selamat;
+                var hasil = selamat;
+                document.write(penghargaan("Bumi") +"<br />");
+                document.write(hasil("Fahrizal")) 
+            </script>
+        </big>
+    </body>
+</html>
+
+Dalam Sebuah Kode Berikut Ini Jika var penghargaan Di Hilangkan Hasil Yang Akan Tampil Adalah...
+
+a. Selamat kepada anda, Akbar!
+   Selamat kepada anda, Bumi!
+   Selamat kepada anda, Fahrizal!
+b. Selamat kepada anda, Akbar!
+   Selamat kepada anda, Fahrizal!
+c. Selamat kepada anda, Akbar!
+d. Selamat kepada anda, Bumi!
+   Selamat kepada anda, Fahrizal!
+e. Selamat kepada anda, Bumi!
+
+4. Perhatikan kode di bawah berikut!
+<html>
+   <head><title>Try/Catch</title>
+     <script type="text/Javascript">
+        try
+        {
+            alert("Saldo rekening Rp.:" + dapatkanSaldo());
+        }
+        catch(err)
+        {
+           document.write("Ada yang salah! \n"+
+           err.name + ": "+ err.message); 
+        }
+     </script>
+   </head>
+</html>
+
+Dilihat Dari Kode di atas output yang muncul adalah
+
+A. Saldo rekening Rp.: Ada yang salah
+B. Ada Yang Salah dapatkanSaldo is not defined
+C. ReferenceError: dapatkanSaldo is not defined
+D. RangeError: dapatkanSaldo is not defined
+E. SyntaxError: dapatkanSaldo is not defined
+
+
+answer: C
+
+5. Perhatikan Kode Berikut Ini!
+<html>
+    <head>
+            <script type="text/javascript">
+                function halo(selamat) {
+                    document.bgColor="green";
+                    alert("Selamat Anda Juara 1! " + selamat);
+                }
+            </script>
+    </head>
+    <body>
+            <form>
+                <input type="button"
+                value="Klik Tombol Nya"
+                onclick="halo('Selamat');"/>
+            </form>
+    </body>
+</html>
+
+Dari Kode Berikut Hasil Apa Yang Akan Muncul Jika Pengguna Mengklik Tombol Nya Dan Apakah Background Nya Berubah Ketika Pengguna Mengklik Button Nya?
+
+a. Selamat Anda Juara 1! dan Background Masih Tetap
+b. Anda Juara 1! Selamat dan Background Berubah Warna
+c. Selamat Anda Juara Selamat dan background masih tetap 
+d. Selamat Anda Juara 1! Selamat dan background berubah warna 
+e. Selamat Anda Juara 1! Selamat dan background masih tetap

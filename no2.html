@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Level</title>
+      <script type="text/javascript">
+         function KananKiri(nomor){
+          document.write("<b><font size='+1'>x "
+            + nomor + "</b><br />");
+          if(nomor < 4){
+          KananKiri(nomor + 1); // Fungsi memanggil dirinya
+            document.write("<em>x "+ nomor + "<em><br />");
+          }
+        }
+      </script>
+  </head>
+  <body bgcolor="lightblue">
+    <h2>Level</h2>
+    <script type="text/javascript">
+      KananKiri(1);
+    </script>
+  </body>
+</html>

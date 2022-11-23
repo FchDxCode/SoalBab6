@@ -1,0 +1,26 @@
+<html>
+    <head>
+            <script class="text/javascript">
+                var selamat=function (peserta) {
+                    // Tubuh fungsi ditugaskan kepada salam
+                    pesan="Selamat kepada anda, " + peserta + "! ";
+                    return pesan;
+                }
+            </script>
+    </head>
+    <body>
+        <big>
+            <script type="text/javascript">
+                var nama=selamat("Akbar");
+                document.write(nama + "<br />");
+                var penghargaan = selamat;
+                // Variabel fungsi ditugaskan kepada variabel lain
+                var hasil = selamat;
+                document.write(penghargaan("Bumi") +"<br />");
+                // Memanggil fungsi
+                document.write(hasil("Fahrizal")) 
+            </script>
+        </big>
+    </body>
+</html>
+<!--Soal Fachru-->
